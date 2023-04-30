@@ -7,7 +7,7 @@ variable "cluster_name" {
 variable "cluster_autotermination_minutes" {
   description = "How many minutes before automatically terminating due to inactivity."
   type        = number
-  default     = 60
+  default     = 20
 }
 
 variable "cluster_num_workers" {
