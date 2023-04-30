@@ -4,6 +4,13 @@ terraform {
       source = "databricks/databricks"
     }
   }
+  cloud {
+    organization = "datagriff"
+
+    workspaces {
+      name = "learn_platform_databricks"
+    }
+  }
 }
 
 # Use environment variables for authentication.
